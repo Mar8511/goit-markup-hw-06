@@ -21,6 +21,26 @@ a {
 	text-decoration: none;
 }
 /* header */
+
+.top-bar {
+	background-color: var(--white);
+}
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container {
+	min-width: 1158px;
+	padding: 0 15px;
+}
+
+.logo {
+	margin-left: 166px;
+}
+
 .logo,
 .second-logo {
 	font-family: var(--second-family);
@@ -41,13 +61,33 @@ a {
 	color: var(--ocean);
 }
 
-.list-item a {
+.navigation {
+	margin-right: auto;
+}
+
+.navigation-list {
+	display: flex;
+	gap: 40px;
+
+	margin: 0;
+	padding-left: 76px;
+}
+
+.navigation-list a {
 	font-family: var(--font-family);
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 150%;
 	letter-spacing: 0.02em;
 	color: var(--navy-blue);
+}
+
+.info {
+	display: flex;
+	gap: 40px;
+
+	padding: 0;
+	margin: 0;
 }
 .info a {
 	font-family: var(--font-family);
@@ -56,6 +96,9 @@ a {
 	line-height: 150%;
 	letter-spacing: 0.02em;
 	color: var(--slate);
+}
+.contacts {
+	margin-right: 156px;
 }
 
 .mail:hover,
@@ -69,10 +112,21 @@ a {
 }
 
 /* main */
+
 /* section 1 */
 .hero {
 	background: var(--navy-blue);
+	height: calc(620px + 10px);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+
+
 }
+
 h1 {
 	font-family: var(--font-family);
 	font-weight: 700;
@@ -80,6 +134,11 @@ h1 {
 	line-height: 107%;
 	letter-spacing: 0.02em;
 	color: var(--white);
+
+	word-wrap: break-word;
+	width: 600px;
+	text-align: center;
+	margin-top: -188px;
 }
 
 .btn {
@@ -90,11 +149,15 @@ h1 {
 	letter-spacing: 0.04em;
 	color: var(--white);
 	background-color: var(--iris);
+	border-radius: 4px;
+
+	padding: 16px 32px 16px 32px;
+
 }
 
 .btn:hover,
-.btn:focus{
-    color: var(--ocean);
+.btn:focus {
+	color: var(--ocean);
 }
 /* section 2 */
 .heading {
