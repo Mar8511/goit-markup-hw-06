@@ -25,14 +25,12 @@ ul {
 a {
 	text-decoration: none;
 }
-
-
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-
 }
+
 /* header */
 
 .flex-container {
@@ -123,7 +121,7 @@ img {
 
 .container-main {
     width: 1158px;
-	padding: 10 10px;
+	padding: 10px 10px;
 	margin: 0 auto;
 }
 
@@ -133,6 +131,8 @@ img {
 	align-items: center;
 	justify-content: center;
 	padding: 188px 0;
+	gap: 48px;
+
 }
 
 h1 {
@@ -143,8 +143,9 @@ h1 {
 	letter-spacing: 0.02em;
 	color: var(--white);
 	word-wrap: break-word;
-	width: 600px;
+	width: 496px;
 	text-align: center;
+	margin: 0;
 }
 
 .btn {
@@ -154,9 +155,11 @@ h1 {
 	line-height: 150%;
 	letter-spacing: 0.04em;
 	color: var(--white);
-	background-color: var(--iris);
+	background-color:var(--iris);
 	border-radius: 4px;
 	padding: 16px 32px;
+	border: none;
+ */
 }
 
 .btn:hover,
@@ -165,6 +168,7 @@ h1 {
 }
 
 /* section 2 */
+
 
 .container-heading {
 	width: 1158px;
@@ -190,7 +194,9 @@ h1 {
 	line-height: 120%;
 	letter-spacing: 0.02em;
 	color: var(--navy-blue);
+	margin: 0;
 }
+
 .article {
 	font-family: var(--font-family);
 	font-weight: 400;
@@ -198,6 +204,13 @@ h1 {
 	line-height: 150%;
 	letter-spacing: 0.02em;
 	color: var(--slate);
+	margin: 0;
+	margin-bottom: 8px;
+}
+
+.team-member {
+	width: calc((100% - 72px)/4);
+
 }
 
 /* section 3 */
@@ -250,11 +263,13 @@ h1 {
 	margin: 0;
 	padding: 0;
 
+
 }
 
 .item-list li {
 	background-color: var(--white);
 	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 	
 }
 
@@ -299,27 +314,46 @@ h1 {
 }
 
    .item {
-/* border-top:2px solid red; */
-	border-right: 2px solid black;
-	border-bottom: 2px solid black;
-	border-left: 2px solid black;
+	padding: 32px 16px;
+	border: 1px solid var(--cornflower);
+	border-top: none;
+	background:var(--white);
 
-   }
-
-
-
-
+}
 
 
 /* footer */
+
 .footer {
 	background-color: var(--navy-blue);
+	padding: 110px 166px;
+	
 }
 
 .text {
 	color: var(--cloud);
+	margin: 0;
+	word-wrap: break-word;
+	width:264px
+	
+
 }
 
 .second-icon {
 	color: var(--cloud);
+
+}
+
+
+.container-footer {
+	width:1158px;
+	/* margin:  0 auto; */
+	padding: 10px 10px ;
+
+
+}
+
+.second-logo {
+	display:inline-block;
+	margin-bottom:16px
 }
