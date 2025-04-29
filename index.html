@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goit-markup-hw-01</title>
+    <title>Goit-markup-hw</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
+   
+        
 
+      
+
+  
 </head>
 
 <body>
@@ -40,7 +45,7 @@
         <section class="hero">
             <div class="container-main flex-container-hero">
                 <h1> Effective Solutions for Your Business</h1>
-                <button type="button" class="btn">Order Service </button>
+                <button type="button " class="btn" data-modal-open>Order Service </button>
             </div>
         </section>
         <section class="main">
@@ -111,7 +116,7 @@
                 <ul class="item-list">
                     <li class="team-member">
                         <img src="./images/1-img.jpeg" alt="person responsible for creating products " width="264">
-                        <div>
+                        <div class="profile-box">
                             <h3 class="heading card">Mark Guerrero</h3>
                             <p class="article description">Product Designer</p>
                             <ul class="media">
@@ -148,12 +153,12 @@
                                 </li>
 
                             </ul>
-                        </div>
+                            </divprofile-box>
                     </li>
 
                     <li class="team-member">
                         <img src="./images/2-img.jpeg" alt="person responsible for creating websites" width="264">
-                        <div>
+                        <div class="profile-box">
                             <h3 class="heading card">Tom Ford</h3>
                             <p class="article description">Frontend Developer</p>
                             <ul class="media">
@@ -195,7 +200,7 @@
                     <li class="team-member">
                         <img src="./images/3-img.jpeg" alt="person responsible for sales promotion" width="264">
 
-                        <div>
+                        <div class="profile-box">
                             <h3 class="heading card">Camila Garcia</h3>
                             <p class="article description">Marketig</p>
                             <ul class="media">
@@ -237,7 +242,7 @@
                     <li class="team-member">
                         <img src="./images/4-img.jpeg" alt="person responsible for product design" width="264">
 
-                        <div>
+                        <div class="profile-box">
                             <h3 class="heading card">Daniel Wilson</h3>
                             <p class="article description">Ul Designer</p>
                             <ul class="media ">
@@ -283,19 +288,23 @@
             <div class="container-second-headline flex-container-headline">
                 <h2 class="second-heading">Our Portfolio</h2>
                 <ul class="item-second-list">
-                    <li class="list">
-                        <img src="./images/1Aimg .jpg" alt="app to bank " width="360">
+                    <li class="list cursor-list-shadow">
+                        <div class="portfolio-overlay">
+                            <img src="./images/1Aimg .jpg" alt="app to bank " width="360">
+                            <p class="portfolio-overly-text"> 14 Stylish and User-Friendly App Design Concepts ·
+                                Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce <br>
+                                App · Cloud Storage App</p>
+                        </div>
                         <div class="item">
                             <h3 class="heading">Banking App</h3>
                             <p class="article">App</p>
                         </div>
                     </li>
-                    <li class="list cursor-list-shadow  ">
+                    <li class="list cursor-list-shadow ">
                         <div class="portfolio-overlay">
                             <img src="./images/2Bimg.jpg" alt="app to pay" width="360">
-
-
-                            <p class="portfolio-overly-text  ">14 Stylish and User-Friendly App Design Concepts ·
+                            <p class="portfolio-overly-text ">
+                                14 Stylish and User-Friendly App Design Concepts ·
                                 Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce <br>
                                 App · Cloud Storage App
                             </p>
@@ -305,29 +314,52 @@
                             <p class="article">Marketing</p>
                         </div>
                     </li>
-                    <li class="list">
-                        <img src="./images/3Cimg.jpg" alt="computer and smartfon" width="360">
+                    <li class="list cursor-list-shadow">
+                        <div class="portfolio-overlay">
+                            <img src="./images/3Cimg.jpg" alt="computer and smartfon" width="360">
+                            <p class="portfolio-overly-text"> 14 Stylish and User-Friendly App Design Concepts ·
+                                Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce <br>
+                                App · Cloud Storage App
+                            </p>
+                        </div>
                         <div class="item">
                             <h3 class="heading">Meditation App</h3>
                             <p class="article">App</p>
                         </div>
                     </li>
-                    <li class="list">
-                        <img src="./images/4Dimg.jpg" alt=" taxi driver " width="360">
+                    <li class="list cursor-list-shadow">
+                        <div class="portfolio-overlay">
+                            <img src="./images/4Dimg.jpg" alt=" taxi driver " width="360">
+                            <p class="portfolio-overly-text"> 14 Stylish and User-Friendly App Design Concepts ·
+                                Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce <br>
+                                App · Cloud Storage App
+                            </p>
+                        </div>
                         <div class="item">
                             <h3 class="heading">Taxi Service</h3>
                             <p class="article">Marketing</p>
                         </div>
                     </li>
-                    <li class="list">
-                        <img src="./images/5Eimg.jpg" alt=" design screen smartphone   " width="360">
+                    <li class="list  cursor-list-shadow">
+                        <div class="portfolio-overlay">
+                            <img src="./images/5Eimg.jpg" alt=" design screen smartphone   " width="360">
+                            <p class="portfolio-overly-text">14 Stylish and User-Friendly App Design Concepts ·
+                                Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce <br>
+                                App · Cloud Storage App </p>
+                        </div>
                         <div class="item">
                             <h3 class="heading">Screen Illustrations</h3>
                             <p class="article">Design</p>
                         </div>
                     </li>
-                    <li class="list">
-                        <img src="./images/6Fimg.jpg" alt="woman who learning " width="360">
+                    <li class="list  cursor-list-shadow">
+                        <div class="portfolio-overlay">
+                            <img src="./images/6Fimg.jpg" alt="woman who learning " width="360">
+                            <p class="portfolio-overly-text">14 Stylish and User-Friendly App Design Concepts ·
+                                Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce <br>
+                                App · Cloud Storage App
+                            </p>
+                        </div>
                         <div class="item">
                             <h3 class="heading">Online Courses</h3>
                             <p class="article">Marketing</p>
@@ -348,8 +380,10 @@
                     marketing & growth solutions.
                 </p>
             </div>
-            <!-- Prawa strona  -->
-            <div class="margin-container">
+
+            <!-- Prawa strona 1  -->
+
+            <div class="margin-first-container">
                 <p class="social-title">Social media</p>
                 <ul class="media media-footer">
                     <li class="circle">
@@ -380,12 +414,101 @@
                             </svg>
                         </a>
                     </li>
-
-
                 </ul>
+            </div>
+
+            <!-- Prawa strona z tekstem 2 -->
+
+            <div class="margin-second-container">
+                <p class="subscribe-title modal-size">Subscribe</p>
+                <form class="newsletter-form">
+                    <label>
+                        <input class="icon-email"  type="email" name="email" placeholder="E-mail" required />
+
+                    </label>
+                    <div class="footer-btn">
+                        <button class="subscribe-btn" type="submit"><span class="subscribe-text modal-size">Subscribe</span>
+                            <svg class="svg-btn" width="24" height="20">
+                                <use href="./images/icomoon/symbol-defs.svg#icon-icon-send"></use>
+                            </svg>
+                        </button> <
+                    </div>
+
+
+                </form>
             </div>
         </div>
     </footer>
+
+
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <div class="button-header">
+                <button type="button" class="modal-btn" data-modal-close>
+                    <svg class="modal-svg" width="8" hight="8">
+                        <use href="./images/icomoon/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <h2 class="modal-title modal-size">Leave your contacts and we will call you back</h2>
+
+            <form class="modal-form">
+                <label>
+                    Name
+                    <div class="input-wrapper name">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icomoon/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                        </svg>
+                        <input class="input" type="text" name="username" autofocus />
+                    </div>
+                </label>
+
+
+
+                <label>
+                    Phone
+                    <div class="input-wrapper phone">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icomoon/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                        <input class="input" type="tel" name="number" />
+                    </div>
+                </label>
+
+
+
+                <label>
+                    Email
+                    <div class="input-wrapper email">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icomoon/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                        </svg>
+                        <input class="input" type="email" name="email" />
+                    </div>
+                </label>
+
+
+
+                <label>
+                    Comment
+                    <textarea class="textarea" name="comment" placeholder="Text input"></textarea>
+                </label>
+
+
+
+                <label class="modal-item">
+                    <input class="input-checkbox" type="checkbox" required>
+                    I accept the terms and conditions of the <a class="privacy-link" href="#">Privacy Policy</a>
+                </label>
+
+
+                <button class="submit-btn" type="submit"><span class="btn-span modal-size">Send</span></button>
+
+            </form>
+        </div>
+    </div>
+    <script type="module" src="./js/modal.js"></script>
 </body>
 
 </html>
