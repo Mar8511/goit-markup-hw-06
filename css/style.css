@@ -80,9 +80,7 @@ visibility: visible;
 }
 
 .link:hover,
-.link:focus, 
-.mobile-link:hover,
-.mobile-link:focus {
+.link:focus{
 	color: var(--ocean);
 }
 
@@ -105,8 +103,7 @@ visibility: visible;
 	position: relative;
 }
 
-.navigation-list a ,
-.mobile-list a {
+.navigation-list a {
 	font-family: var(--font-family);
 	font-weight: 500;
 	font-size: 16px;
@@ -120,8 +117,7 @@ visibility: visible;
 	gap: 40px;
 }
 
-.info a ,
-.mobile-info a {
+.info a {
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 16px;
@@ -132,10 +128,7 @@ visibility: visible;
 }
 
 .mail:hover,
-.mail:focus ,
-.mobile-mail:hover,
-.mobile-mail:hover
-{
+.mail:focus {
 	color: var(--ocean);
 }
 
@@ -764,8 +757,9 @@ textarea {
 
 }
 
-.hamburger {
+       /* Mobile */
 
+.hamburger {
 	width: 24px;
 	height: 24px;
 	background-color: transparent;
@@ -790,56 +784,76 @@ width:100%;
 height: 100%;
 background:var(--white);
 z-index: 999;
-padding: 72px 16px 40px ;
-/* display: flex;
-flex-direction: column; */
+padding: 40px 16px ;
+
+display: flex;
+flex-direction: column;
 
 
 transform: translateX(100%);
 transition: transform 250ms ease-in-out;
 
-
 }
-.mobile-container{
-	display: flex;
-	flex-direction: column;
-	padding-right: 24px;
-	padding-top: 24px;
 
-
-}
 .btn-mobile-close{
-align-self: flex-end;
-margin-right: 24px ;
+position: absolute;
+top: 24px;
+right: 272px;
 }
-
-
-
-
-
 
 
 .mobile-list{
-	display: flex;
-	flex-direction: column;
-	gap:40px;
 
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 36px;
+line-height: 111%;
+letter-spacing: 0.02em;
 
+display: flex;
+flex-direction: column;
+gap:40px;
 
+padding-top: 72px;
+
+}
+.mobile-link-studio{
+	color: var(--ocean);
+}
+
+.mobile-link{
+	color: var(--navy-blue)
 }
 
 
+.info-feature{
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0.02em;
+color: var(--slate);
+
+
+}
 
 .mobile-info {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
+
 	margin-top: 80px;
-	
-	
 
 }
+	
+.mobile-contact {
+	color: var(--iris);
+}
 
+.mobile-contact{
+	color: var(--slate);
+
+}
 
 .mobile-social-list{
 	display: flex;
@@ -847,12 +861,11 @@ margin-right: 24px ;
 	/* justify-content: center; */
 	gap: 40px;
 
-
 	margin-top: 80px;
 
 }
 .mobile-icon-list{
-background-color: var(--iris);
+    background-color: var(--iris);
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -861,17 +874,20 @@ background-color: var(--iris);
 	justify-content: center;
 }
 
-.btn-mobile-close{
-	margin-top: 24px;
-
-}
 
 @media screen and (max-width:767px){
-	
-	
+.container {
+	width: 320px;
+	padding: 0 15px;
+	margin: 0 auto;}
 
-	.hero{display:none}
+	.hero{
+		display:none
+	 }
 
+    header {
+		padding: 16px 0;
+	}
 	.navigation-list, 
 	.contacts{ 
 		display: none
@@ -880,10 +896,8 @@ background-color: var(--iris);
 	.hamburger {
     display: block;
   }
-
 }
-
-  @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
 	.navigation-list,
     .info {
 		display:flex 
