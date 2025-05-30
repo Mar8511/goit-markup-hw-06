@@ -785,7 +785,7 @@ left:0;
 width: 100vw;
 height: 100vh;
 background:var(--white);
-z-index: 9999;
+z-index: 999;
 padding: 24px 16px ;
 
 /* transform: translateX(100%); */
@@ -861,11 +861,13 @@ color: var(--slate);
 
 .mobile-social-list{
 	display: flex;
-	align-items: center;
-	/* justify-content: center; */
+	align-items: center; 
+	align-items: baseline;
 	gap: 40px;
 
+
 	margin-top: 80px;
+
 
 }
 .mobile-icon-list{
