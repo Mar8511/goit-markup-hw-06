@@ -615,7 +615,9 @@ margin-right: 16px;
  .button-header {
 	display: flex;
 	justify-content: flex-end;
-	margin-bottom:24px;
+
+	padding-left: 24px;
+	padding-bottom: 24px;
 
 }
 
@@ -780,25 +782,27 @@ visibility: hidden;
 position: fixed;
 top:0 ;
 left:0;
-width:100%;
-height: 100%;
+width: 100vw;
+height: 100vh;
 background:var(--white);
-z-index: 999;
-padding: 40px 16px ;
+z-index: 9999;
+padding: 24px 16px ;
 
-display: flex;
-flex-direction: column;
+/* transform: translateX(100%); */
+/* transition: transform 250ms ease-in-out; */
 
 
-transform: translateX(100%);
-transition: transform 250ms ease-in-out;
+
 
 }
+.mobile-buttton{
+	display: flex;
+	flex-direction: column;
 
+}
 .btn-mobile-close{
-position: absolute;
-top: 24px;
-right: 272px;
+	align-self: flex-end;
+    margin-left: 24px ;
 }
 
 
