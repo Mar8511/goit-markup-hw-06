@@ -247,6 +247,17 @@ gap: 72px
 .main {
 	padding: 120px 0;
 }
+@media (max-width:768px){
+.container-heading { 
+	width:320px;
+
+	}
+
+.main{
+	padding: 96px 16px ;
+}
+	
+}
 
 .article-heading {
 	display: flex;
@@ -254,6 +265,17 @@ gap: 72px
 
 	padding: 0;
 	margin: 0;
+}
+@media(max-width:768px){
+	.article-heading{
+	display: flex;
+	flex-direction: column;
+    word-wrap: break-word;
+	max-width: 300px;
+	
+	gap: 72px;
+	
+	}
 }
 
 .svg {
@@ -265,6 +287,14 @@ gap: 72px
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+@media (max-width:768px) { 
+	.svg {
+	display: none;
+
+
+}
+	
 }
 
 .heading {
@@ -278,10 +308,21 @@ gap: 72px
 
 	
 }
+@media(max-width:768px){
+.heading{
+	font-weight: 700px; 
+    font-size:36px ;
+	line-height: 111%;
+	text-align: center;
+	
+
+
+	}
+}
 
 .article {
 	font-family: var(--font-family);
-	font-weight: 400;
+	font-weight: 400;  
 	font-size: 16px;
 	line-height: 150%;
 	letter-spacing: 0.02em;
@@ -289,6 +330,18 @@ gap: 72px
 	margin:0;
 	
 }
+@media (max-width:768px) {
+.article {
+	font-weight: 500px; 
+	
+
+}
+
+.article-item{;}
+	
+}
+	
+
 
 .team-member {
 	width: calc((100% - 72px) / 4);
